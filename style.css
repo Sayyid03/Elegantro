@@ -739,112 +739,6 @@ html {
   font-style: italic;
 }
 
-/* @media (max-width: 960px) {
-  .showcase-content {
-    top: 13rem;
-  }
-
-  .about .about-grid {
-    grid-template-columns: 1fr;
-  } */
-
-/* .about-grid-card img {
-    margin-top: 10px;
-  } */
-
-/* .service .service-cards {
-    grid-template-columns: 2fr;
-    grid-gap: 10px;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-text {
-    display: block;
-    text-align: center;
-  }
-  .footer-text div h3 {
-    margin-top: 20px;
-  }
-} */
-
-/* @media (max-width: 768px) {
-  .showcase {
-    height: 70vh;
-  }
-
-  .showcase-content {
-    top: 6rem;
-
-    /* padding: 20px; */
-/* } */
-/* .links {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background: #0f172a;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 0;
-    transform: translateY(-150%);
-    transition: 0.3s ease;
-  } * */
-
-/* SHOW MENU */
-/* #navLinks.active {
-    transform: translateY(0);
-  } */
-
-/* SHOW HAMBURGER */
-/* .hamburger {
-    display: flex;
-  }
-
-  .showcase {
-    margin-right: 0;
-  }
-  .showcase .text {
-    width: 400px;
-  }
-  .about {
-    height: 800px;
-  }
-  .grid-achivement {
-    grid-template-columns: 1fr;
-  }
-  .about-grid-card img {
-    display: none;
-  }
-
-  .portfolio ul li a {
-    padding: 8px;
-    font-size: 1rem;
-  }
-
-  .cards {
-    grid-template-columns: 1fr;
-  } */
-/* .arrow {
-    margin: 15px 0;
-  } */
-/* .rating {
-    grid-template-columns: 1fr;
-  }
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-  .footer-grid {
-    text-align: center;
-  }
-  .footer-icons {
-    margin-top: 40px;
-  }
-} */
-
 @media (max-width: 960px) {
   .showcase-content {
     top: 10rem;
@@ -933,6 +827,9 @@ html {
   .showcase {
     min-height: 100vh;
     padding: 120px 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .showcase-content {
