@@ -446,7 +446,6 @@ html {
 .hide {
   display: none;
 }
-
 .testimonials {
   background-color: rgba(128, 128, 128, 0.107);
   padding: 70px 0;
@@ -471,24 +470,26 @@ html {
 .testimonial-head p {
   color: #121a2d;
   font-size: 1.2rem;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
+/* =========================
+   SLIDER FIX (IMPORTANT)
+========================= */
 .slider {
-  width: 100%;
-  min-height: auto;
-  height: auto;
   position: relative;
+  width: 100%;
   overflow: hidden;
+  padding-bottom: 10px;
 }
 
 .slide {
-  position: absolute;
   width: 100%;
-  min-height: auto;
-  height: auto;
-  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
+  padding: 2rem;
+  transition: 0.4s ease;
 }
 
 .slide > img {
@@ -497,40 +498,43 @@ html {
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid #ecb60b;
-  margin: 10px auto 0;
   display: block;
+  margin: 0 auto 15px;
 }
 
 .slide .stars {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 5px;
   color: #ecb60b;
   font-size: 16px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .slide p {
-  margin-top: 20px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-style: italic;
-  /* font-weight: 100; */
+  color: #121a2d;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .slide h3 {
-  margin-top: 30px;
+  margin-top: 10px;
+  color: #121a2d;
 }
 
 .slide h4 {
-  margin-top: 10px;
-  color: #ecb60b;
+  margin-top: 5px;
+  color: #c08b19;
 }
+
 .arrow {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px 0;
+  margin-top: 25px;
+  gap: 15px;
 }
 
 .arrow i {
@@ -538,8 +542,7 @@ html {
   background-color: #ecb60b;
   color: #121a2d;
   font-size: 1.5rem;
-  padding: 20px;
-  margin: 10px;
+  padding: 18px;
   border-radius: 50%;
   transition: all 0.3s ease;
 }
@@ -551,9 +554,9 @@ html {
 .rating {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  gap: 30px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .rating > div {
@@ -1011,6 +1014,9 @@ html {
   .card-image img {
     height: 300px;
   }
+  .testimonial-head h1 {
+    font-size: 2rem;
+  }
 
   .slider {
     height: auto;
@@ -1034,7 +1040,10 @@ html {
 
   .rating {
     grid-template-columns: 1fr;
-    gap: 20px;
+  }
+
+  .arrow {
+    margin-top: 15px;
   }
 
   .contact-grid {
