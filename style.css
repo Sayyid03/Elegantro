@@ -446,6 +446,10 @@ html {
 .hide {
   display: none;
 }
+/* =========================
+   TESTIMONIALS
+========================= */
+
 .testimonials {
   background-color: rgba(128, 128, 128, 0.107);
   padding: 70px 0;
@@ -459,7 +463,7 @@ html {
 .testimonial-head h1 {
   color: #121a2d;
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -469,39 +473,46 @@ html {
 
 .testimonial-head p {
   color: #121a2d;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 40px;
+  line-height: 1.7;
 }
 
+.slider-wrapper {
+  min-height: fit-content;
+}
 .slider {
   position: relative;
-  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  min-height: 340px;
   overflow: hidden;
-  padding-bottom: 10px;
 }
 
 .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
   text-align: center;
   padding: 2rem;
-  transition: 0.4s ease;
+  transition: transform 0.5s ease;
 }
 
 .slide > img {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid #ecb60b;
   display: block;
-  margin: 0 auto 15px;
+  margin: 0 auto 20px;
 }
 
 .slide .stars {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5px;
   color: #ecb60b;
   font-size: 16px;
@@ -509,43 +520,43 @@ html {
 }
 
 .slide p {
-  font-size: 1.4rem;
-  font-style: italic;
   color: #121a2d;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 25px;
 }
 
 .slide h3 {
-  margin-top: 10px;
   color: #121a2d;
+  margin-bottom: 8px;
 }
 
 .slide h4 {
-  margin-top: 5px;
   color: #c08b19;
+  font-weight: 500;
 }
 
 .arrow {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
   gap: 15px;
+  margin-top: -10px;
 }
 
 .arrow i {
   cursor: pointer;
   background-color: #ecb60b;
   color: #121a2d;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 18px;
   border-radius: 50%;
   transition: all 0.3s ease;
 }
 
 .arrow i:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .rating {
@@ -558,7 +569,7 @@ html {
 
 .rating > div {
   background-color: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.248);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
   padding: 2rem;
 }
@@ -902,30 +913,32 @@ html {
   }
 
   .cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     padding: 10px;
   }
 
   .card-image img {
     height: 300px;
   }
-  .testimonial-head h1 {
-    font-size: 2rem;
+
+  .testimonial-head p {
+    font-size: 1rem;
   }
 
   .slider {
-    height: auto;
-    padding-bottom: 20px;
+    min-height: 430px;
   }
 
   .slide {
-    position: relative;
     padding: 1.5rem;
-    height: auto;
-    min-height: 420px;
   }
   .arrow {
     margin-top: 20px;
+  }
+
+  .arrow i {
+    padding: 15px;
+    font-size: 1rem;
   }
 
   .slide p {
@@ -935,10 +948,6 @@ html {
 
   .rating {
     grid-template-columns: 1fr;
-  }
-
-  .arrow {
-    margin-top: 15px;
   }
 
   .contact-grid {
@@ -999,7 +1008,6 @@ html {
   .showcase .text {
     font-size: 0.95rem;
   }
-
   .service-card,
   .contact-grid > div,
   .rating > div {
@@ -1008,6 +1016,18 @@ html {
 
   .card-image img {
     height: 250px;
+  }
+  .slider {
+    min-height: 480px;
+  }
+
+  .slide > img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .slide p {
+    font-size: 0.95rem;
   }
 
   .arrow i {
