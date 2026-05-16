@@ -18,7 +18,7 @@
     <nav class="nav-bar">
       <div class="container">
         <div class="logo">
-          <h1>Elegantro</h1>
+          <img src="images/logo.png" alt="Elegantro Logo" />
         </div>
         <ul class="links" id="navLinks">
           <li><a href="#home">Home</a></li>
@@ -39,8 +39,7 @@
       <div class="showcase-overlay"></div>
       <div class="container">
         <div class="showcase-content">
-          <h1>Elegantro</h1>
-          <p class="motto">elegance in every stitch</p>
+          <h2 class="showcase-title">Tailored Elegance for Every Occasion</h2>
           <p class="text">
             Experience the art of bespoke tailoring where every stitch tells a
             story of craftsmanship and sophistication.
@@ -68,7 +67,7 @@
             </p>
             <div class="grid-achivement">
               <div class="achivement">
-                <h1>4+</h1>
+                <h1>5+</h1>
                 <p>years experience</p>
               </div>
               <div class="achivement">
@@ -82,7 +81,7 @@
             </div>
           </div>
           <div class="about-grid-card">
-            <img src="images/bg5.png" alt="" />
+            <img src="images/bg1.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -149,7 +148,7 @@
               <li><i class="fas fa-check"></i>Rush orders available</li>
             </ul>
           </div>
-          <a href="#" class="btn">View All Services</a>
+          <!-- <a href="#" class="btn">View All Services</a> -->
         </div>
       </div>
     </section>
@@ -238,7 +237,9 @@
         <div class="slider-wrapper">
           <div class="slider">
             <div class="slide">
-              <img src="images/bg5.png" alt="" />
+              <div class="testimonial-user">
+                <i class="fas fa-user"></i>
+              </div>
               <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -255,7 +256,9 @@
               <h4>Full Stack Developer</h4>
             </div>
             <div class="slide">
-              <img src="images/bg5.png" alt="" />
+              <div class="testimonial-user">
+                <i class="fas fa-user"></i>
+              </div>
               <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -272,7 +275,9 @@
               <h4>Front-End Developer</h4>
             </div>
             <div class="slide">
-              <img src="images/bg5.png" alt="" />
+              <div class="testimonial-user">
+                <i class="fas fa-user"></i>
+              </div>
               <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -289,7 +294,9 @@
               <h4>UI/UX Designer</h4>
             </div>
             <div class="slide">
-              <img src="images/bg5.png" alt="" />
+              <div class="testimonial-user">
+                <i class="fas fa-user"></i>
+              </div>
               <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -303,10 +310,12 @@
                 life."
               </p>
               <h3>Alhassan Ibrahim</h3>
-              <h4>Copper</h4>
+              <h4>Teacher</h4>
             </div>
             <div class="slide">
-              <img src="images/bg5.png" alt="" />
+              <div class="testimonial-user">
+                <i class="fas fa-user"></i>
+              </div>
               <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -319,7 +328,7 @@
                 royalty! The attention to detail and craftsmanship exceeded all
                 my expectations."
               </p>
-              <h3>Gaye</h3>
+              <h3>AbdurRahim Abubakar Sani</h3>
               <h4>Business Man</h4>
             </div>
           </div>
@@ -365,6 +374,7 @@
             <i class="fas fa-phone"></i>
             <h3>Phone</h3>
             <p>08100022297</p>
+            <p>08131839432</p>
           </div>
           <div>
             <i class="fas fa-clock"></i>
@@ -378,9 +388,9 @@
       <a href="#" class="icon top" id="scrolltopbtn"
         ><i class="fas fa-arrow-up"></i
       ></a>
-      <a href="https://wa.link/ufsbh4" class="icon whatsapp"
-        ><i class="fab fa-whatsapp"></i
-      ></a>
+      <div class="icon whatsapp" id="openWhatsappModal">
+        <i class="fab fa-whatsapp"></i>
+      </div>
     </div>
     <footer class="footer">
       <div class="container">
@@ -437,6 +447,42 @@
         </div>
       </div>
     </footer>
+    <div class="whatsapp-modal" id="whatsappModal">
+      <div class="modal-content">
+        <span class="close-modal" id="closeWhatsappModal">&times;</span>
+
+        <h2>Start a Chat</h2>
+        <p>Select who you want to talk to</p>
+
+        <div class="whatsapp-options">
+          <a
+            href="https://wa.link/ufsbh4"
+            target="_blank"
+            class="whatsapp-person"
+          >
+            <div>
+              <h3>AbdulWadud Abubakar Sani</h3>
+              <span>Co-Founder • Design & Enquiries</span>
+            </div>
+
+            <i class="fab fa-whatsapp"></i>
+          </a>
+
+          <a
+            href="https://wa.link/wpx6qm"
+            target="_blank"
+            class="whatsapp-person"
+          >
+            <div>
+              <h3>Mukhtar Kabir</h3>
+              <span>Co-Founder • Orders & Delivery</span>
+            </div>
+
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

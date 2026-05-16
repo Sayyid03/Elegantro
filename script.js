@@ -93,3 +93,26 @@ links.forEach((link) => {
     });
   });
 });
+
+const openWhatsappModal = document.getElementById("openWhatsappModal");
+const whatsappModal = document.getElementById("whatsappModal");
+const closeWhatsappModal = document.getElementById("closeWhatsappModal");
+
+openWhatsappModal.addEventListener("click", (e) => {
+  e.preventDefault();
+  whatsappModal.classList.add("show");
+});
+
+closeWhatsappModal.addEventListener("click", function () {
+  removeModal();
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === whatsappModal) {
+    removeModal();
+  }
+});
+
+function removeModal() {
+  whatsappModal.classList.remove("show");
+}
